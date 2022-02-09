@@ -1,16 +1,6 @@
-p{
-	color:blue;
-	background: yellow;
+body{
+	font-family: 'IBM Plex Mono', monospace;	
 }
-h1{
-	color:solmon;
-}
-h2{
-	color:pink;
-}
-a{
-	text-decoration:none;
-}
-.highlight{
-	background:pink;
+h1, h2, .skill-list{
+	font-family: 'Inknut Antiqua', serif;
 }

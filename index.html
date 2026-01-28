@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srestha Chakraborty - Lead IT Compliance Advisor</title>
+    <title>Srestha Chakraborty - Lead IT Compliance Advisor | CV</title>
     <style>
         * {
             margin: 0;
@@ -12,84 +12,147 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 60px 40px;
+            padding: 50px 40px;
             text-align: center;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 600;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -1px;
         }
 
-        .subtitle {
-            font-size: 1.5em;
-            margin-bottom: 30px;
+        .tagline {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        .specializations {
+            font-size: 1em;
+            margin-bottom: 25px;
+            opacity: 0.9;
             font-weight: 300;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             flex-wrap: wrap;
-            font-size: 1em;
+            font-size: 0.95em;
+            opacity: 0.95;
         }
 
         .contact-info span {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         main {
-            padding: 40px;
+            padding: 45px 50px;
         }
 
         section {
             margin-bottom: 40px;
+            page-break-inside: avoid;
         }
 
         h2 {
             color: #1e3c72;
-            font-size: 2em;
+            font-size: 1.9em;
             margin-bottom: 20px;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
             border-bottom: 3px solid #2a5298;
+            font-weight: 700;
         }
 
         h3 {
             color: #2a5298;
-            font-size: 1.4em;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        h4 {
-            color: #1e3c72;
-            font-size: 1.1em;
-            margin-top: 15px;
+            font-size: 1.3em;
+            margin-top: 20px;
             margin-bottom: 8px;
             font-weight: 600;
         }
 
-        .job-header {
+        h4 {
+            color: #1e3c72;
+            font-size: 1.05em;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .summary-text {
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #34495e;
+        }
+
+        .company-block {
+            margin-bottom: 35px;
+            border-left: 4px solid #e8f4f8;
+            padding-left: 20px;
+        }
+
+        .company-header {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            margin-left: -20px;
+            padding-left: 35px;
+        }
+
+        .company-name {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 1.25em;
+        }
+
+        .company-details {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-top: 3px;
+        }
+
+        .role-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #fafbfc;
+            border-radius: 6px;
+            border-left: 3px solid #2a5298;
+        }
+
+        .role-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -97,112 +160,148 @@
             flex-wrap: wrap;
         }
 
-        .job-title {
-            font-weight: 600;
-            color: #1e3c72;
-            font-size: 1.2em;
+        .role-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.15em;
         }
 
-        .job-duration {
-            color: #666;
+        .role-duration {
+            color: #7f8c8d;
             font-style: italic;
-        }
-
-        .company-name {
-            font-weight: 600;
-            color: #2a5298;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-
-        .location {
-            color: #666;
             font-size: 0.95em;
+        }
+
+        .role-location {
+            color: #95a5a6;
+            font-size: 0.9em;
             margin-bottom: 10px;
+        }
+
+        .role-description {
+            margin-top: 10px;
+            line-height: 1.6;
         }
 
         ul {
             margin-left: 20px;
-            margin-top: 10px;
+            margin-top: 8px;
+            margin-bottom: 10px;
         }
 
         li {
             margin-bottom: 8px;
             line-height: 1.6;
+            color: #34495e;
         }
 
-        .skills-grid {
+        li strong {
+            color: #1e3c72;
+        }
+
+        .competencies-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-top: 20px;
         }
 
-        .skill-category {
+        .competency-category {
             background-color: #f8f9fa;
-            padding: 20px;
+            padding: 18px;
             border-radius: 8px;
-            border-left: 4px solid #2a5298;
+            border-top: 3px solid #2a5298;
         }
 
-        .skill-category h4 {
+        .competency-category h4 {
             color: #1e3c72;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 1.1em;
         }
 
-        .skill-category ul {
+        .competency-category ul {
             list-style: none;
             margin-left: 0;
         }
 
-        .skill-category li {
-            padding: 5px 0;
-            color: #555;
-        }
-
-        .skill-category li:before {
-            content: "▹ ";
-            color: #2a5298;
-            font-weight: bold;
-        }
-
-        .key-skills {
-            background-color: #e8f4f8;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 10px;
+        .competency-category li {
+            padding: 4px 0;
+            color: #2c3e50;
             font-size: 0.95em;
         }
 
-        .key-skills strong {
+        .competency-category li:before {
+            content: "▸ ";
+            color: #2a5298;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .skills-highlight {
+            background-color: #e8f4f8;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-top: 12px;
+            font-size: 0.92em;
+            border-left: 3px solid #2a5298;
+        }
+
+        .skills-highlight strong {
             color: #1e3c72;
         }
 
-        .highlight-box {
-            background-color: #f0f7ff;
-            border-left: 4px solid #2a5298;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .certifications-grid {
+        .certifications-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
             margin-top: 15px;
         }
 
         .cert-item {
             background-color: #f8f9fa;
-            padding: 15px;
+            padding: 12px 15px;
             border-radius: 6px;
             border-left: 3px solid #2a5298;
+            font-size: 0.95em;
         }
 
-        .languages {
+        .cert-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .cert-issuer {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .education-item {
+            background-color: #f8f9fa;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .education-degree {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 1.1em;
+        }
+
+        .education-school {
+            color: #2c3e50;
+            margin-top: 5px;
+        }
+
+        .education-years {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 3px;
+        }
+
+        .languages-list {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             flex-wrap: wrap;
             margin-top: 15px;
         }
@@ -210,69 +309,172 @@
         .language-item {
             background-color: #f8f9fa;
             padding: 15px 25px;
-            border-radius: 6px;
+            border-radius: 8px;
             border-left: 3px solid #2a5298;
+        }
+
+        .language-name {
+            font-weight: 600;
+            color: #1e3c72;
+        }
+
+        .language-level {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .publication-item {
+            background-color: #f8f9fa;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+            margin-top: 15px;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #1e3c72;
+            font-size: 1.05em;
+            margin-bottom: 5px;
+        }
+
+        .publication-details {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .philosophy-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f7ff 100%);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #2a5298;
+            font-style: italic;
+            line-height: 1.7;
+            color: #2c3e50;
         }
 
         .print-button {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background-color: #2a5298;
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
             color: white;
             padding: 15px 30px;
             border: none;
             border-radius: 50px;
-            font-size: 1em;
+            font-size: 1.05em;
+            font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 6px 20px rgba(42, 82, 152, 0.4);
             transition: all 0.3s ease;
+            z-index: 1000;
         }
 
         .print-button:hover {
-            background-color: #1e3c72;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(42, 82, 152, 0.5);
+        }
+
+        .print-button:before {
+            content: "🖨️ ";
+            margin-right: 8px;
         }
 
         @media print {
             body {
-                background-color: white;
+                background: white;
+                padding: 0;
             }
+
             .container {
                 box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
             }
+
+            header {
+                background: #1e3c72 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
+            }
+
             .print-button {
                 display: none;
             }
-            header {
-                background: #1e3c72;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+
+            section {
+                page-break-inside: avoid;
+            }
+
+            .role-block {
+                page-break-inside: avoid;
+            }
+
+            main {
+                padding: 30px 40px;
+            }
+
+            .competencies-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .certifications-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .competencies-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
             h1 {
                 font-size: 2em;
             }
-            .subtitle {
-                font-size: 1.2em;
+
+            .tagline {
+                font-size: 1.1em;
             }
+
             main {
-                padding: 20px;
+                padding: 25px 20px;
             }
+
             .contact-info {
                 flex-direction: column;
                 gap: 10px;
             }
-            .job-header {
-                flex-direction: column;
+
+            .competencies-grid {
+                grid-template-columns: 1fr;
             }
+
+            .certifications-list {
+                grid-template-columns: 1fr;
+            }
+
+            .role-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
             .print-button {
                 bottom: 20px;
                 right: 20px;
                 padding: 12px 24px;
+                font-size: 0.95em;
             }
         }
     </style>
@@ -281,124 +483,26 @@
     <div class="container">
         <header>
             <h1>Srestha Chakraborty</h1>
-            <div class="subtitle">Lead IT Compliance Advisor | Digital Trust & Governance Strategist</div>
+            <div class="tagline">Lead IT Compliance Advisor | Digital Trust & Governance Strategist</div>
+            <div class="specializations">SOX • GxP • AI Governance • Pharmaceutical Regulatory Excellence</div>
             <div class="contact-info">
                 <span>📧 srestha.chakraborty@gmail.com</span>
                 <span>📱 +91 9611688003</span>
-                <span>📍 Bengaluru, India</span>
+                <span>📍 Bengaluru, Karnataka, India</span>
                 <span>🔗 linkedin.com/in/srestha-chakraborty-35051619</span>
             </div>
         </header>
 
         <main>
+            <!-- EXECUTIVE SUMMARY -->
             <section id="summary">
                 <h2>Executive Summary</h2>
-                <p>Strategic IT Governance and Compliance Leader with <strong>18+ years</strong> architecting governance, compliance, and digital transformation across regulated industries. Deep expertise in SOX, GxP, GDPR, and emerging technology governance—primarily in pharmaceuticals. Proven track record building organizations where compliance, quality, and innovation are woven together from inception.</p>
-                <p style="margin-top: 15px;">Expert in helping teams see governance not as constraint, but as foundation for sustainable competitive advantage. Successfully led enterprise-wide transformations embedding <strong>AI governance, digital trust frameworks, and compliance automation</strong> while maintaining zero audit non-conformities. Currently driving digital trust and compliance excellence at Novo Nordisk while pioneering AI-augmented compliance approaches and <strong>Agentic AI governance frameworks</strong>.</p>
+                <p class="summary-text"><strong>18+ years</strong> architecting governance, compliance, and digital transformation across regulated industries. Deep expertise in SOX, GxP, GDPR, and emerging technology governance—primarily in pharmaceuticals. I believe organisations thrive when compliance, quality, and innovation are woven together from the start—not bolted on later. My work focuses on helping teams see governance not as constraint, but as foundation.</p>
+                
+                <p class="summary-text">I've learned that your competitive edge isn't what you know first—it's your judgment in synthesising complexity and guiding others through it. I mentor and guide high-potential professionals to multiply organisational impact while building cultures of integrity. Currently driving digital trust and compliance excellence while pioneering <strong>AI-augmented compliance approaches and Agentic AI governance frameworks</strong>. Always interested in conversations with thoughtful leaders about the future of regulated industries.</p>
             </section>
 
+            <!-- CORE COMPETENCIES -->
             <section id="competencies">
                 <h2>Core Competencies</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>Governance & Compliance</h4>
-                        <ul>
-                            <li>Digital Trust & Governance Frameworks</li>
-                            <li>Sarbanes-Oxley (SOX) Compliance</li>
-                            <li>GxP Compliance (GMP, GDP, GCP, GPV)</li>
-                            <li>AI Governance & Responsible AI</li>
-                            <li>GDPR & Data Privacy Compliance</li>
-                            <li>Regulatory Inspection Facilitation</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Strategic Leadership</h4>
-                        <ul>
-                            <li>Organizational Transformation</li>
-                            <li>Digital Change Leadership</li>
-                            <li>Strategic Thinking & Development</li>
-                            <li>Servant Leadership & Team Development</li>
-                            <li>Product Ownership & Agile Delivery</li>
-                            <li>Executive Stakeholder Management</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Technical & Operations</h4>
-                        <ul>
-                            <li>Global SAP ECC/System Management</li>
-                            <li>IT Sourcing & Contract Governance</li>
-                            <li>Release & Change Management</li>
-                            <li>Incident & Operational Resilience</li>
-                            <li>Compliance Automation & CSV</li>
-                            <li>Process Optimization</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <h2>Professional Experience</h2>
-
-                <div style="margin-bottom: 40px;">
-                    <div class="company-name">NOVO NORDISK</div>
-                    <div class="location">Bengaluru, Karnataka, India | Full-time: 11 years 1 month</div>
-
-                    <div style="margin-top: 25px;">
-                        <div class="job-header">
-                            <span class="job-title">Lead IT Compliance Advisor</span>
-                            <span class="job-duration">Nov 2025 – Present (3 months) | Hybrid</span>
-                        </div>
-                        <p>Appointed as Lead IT Compliance Advisor during organizational transformation to drive strategic simplification and AI-enabled compliance innovation. Serve as subject matter expert partnering with senior leadership and cross-functional teams to accelerate product delivery while embedding emerging technology risk management into governance frameworks.</p>
-                        
-                        <h4>Strategic Innovation & Simplification:</h4>
-                        <ul>
-                            <li>Pioneer <strong>AI-augmented compliance approaches</strong> including intelligent automation for audit documentation and evidence management, significantly reducing preparation cycles while strengthening control effectiveness</li>
-                            <li>Apply design thinking methodologies to identify and resolve systemic compliance challenges, transforming traditional control frameworks into agile business enablers</li>
-                            <li>Lead enterprise awareness and framework development for emerging risks including <strong>Agentic AI governance</strong>, positioning the organization for competitive advantage in responsible AI adoption</li>
-                        </ul>
-
-                        <h4>Enterprise Advisory & Partnership:</h4>
-                        <ul>
-                            <li>Partner with global directors and senior leadership across IT system management, business operations, and governance functions to embed simplified compliance practices</li>
-                            <li>Drive strategic initiatives across <strong>SOX, GxP, and GDPR domains</strong>, influencing organizational approach to digital trust and governance in the AI era</li>
-                            <li>Deliver thought leadership on compliance modernization, bridging regulatory requirements with business agility</li>
-                        </ul>
-
-                        <div class="key-skills">
-                            <strong>Key Skills:</strong> Digital Trust & Governance Frameworks • Sarbanes-Oxley (SOX) Compliance • AI Governance & Responsible AI • GxP Compliance & Pharmaceutical Regulatory Excellence
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 30px;">
-                        <div class="job-header">
-                            <span class="job-title">Manager</span>
-                            <span class="job-duration">Aug 2023 – Nov 2025 (2 years 4 months) | Hybrid</span>
-                        </div>
-                        <p>Appointed as Manager to establish and lead <strong>IT Business Support for Bangalore GBS</strong> during enterprise-wide organizational transformation. Serve as people leader for teams delivering critical governance, compliance, and strategic sourcing capabilities aligned with global IT strategy.</p>
-                        
-                        <h4>Strategic Accountability:</h4>
-                        <ul>
-                            <li>Lead compliance strategy and advisory services ensuring enterprise SOX adherence and audit readiness</li>
-                            <li>Drive quality governance frameworks supporting regulatory inspections (GMP, GCP, GPV, GDP) and internal controls</li>
-                            <li>Oversee strategic sourcing operations including licensing optimization, contract negotiations, and financial operations</li>
-                            <li>Enable process excellence and risk management digitalization initiatives, strengthening organizational capabilities in data privacy governance</li>
-                        </ul>
-
-                        <h4>Leadership & Organizational Development:</h4>
-                        <ul>
-                            <li>Partner with global leadership to deliver business outcomes through high-performing teams</li>
-                            <li>Foster culture of psychological safety while driving strategic planning, budget stewardship, and talent development</li>
-                            <li>Successfully integrate diverse functions into cohesive business support model during critical transformation period</li>
-                        </ul>
-
-                        <div class="key-skills">
-                            <strong>Key Skills:</strong> Organizational Transformation & Digital Change Leadership • Strategic Thinking & Development • Servant Leadership
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 30px;">
-                        <div class="job-header">
-                            <span class="job-title">Senior Specialist II</span>
-                            <span class="job-duration">Jul 2022 – Aug 2023 (1 year 2 months) | Hybrid</span>
-                        </div>
-                        <p>Elevated to Senior Specialist to lead team growth and strengthen governance
+                <div class="competencies-grid">
